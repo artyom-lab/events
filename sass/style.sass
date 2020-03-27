@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300i,400,700&display=swap')
+
+$color-black: #000000
+$color-nav: #1b9ce5
+$color-red: #f42633
+$color-gray: #ecf0f2
+$color-gray-2: #cccccc
+$color-gray-3: #575757
+$color-gray-4: #b6bfcd
+.gray 
+	color: $color-gray-3
+.gray-2
+	color: $color-gray-4
+
+$transition: .3s
+
+* 
+	outline: none !important
+
+img 
+	max-width: 100%
+	height: auto
+
+body 
+	font-family: 'Roboto', sans-serif
+	background: $color-gray
+
+a 
+	text-decoration: none !important
+	transition: .3s
+
+@media (min-width: 1200px)
+	.container 
+		max-width: 1360px
+
+.h1, h1
+	font-size: 37px
+	color: $color-nav
+	font-weight: bold
+	background-image: url(../img/header.png)
+	background-position: left center
+	background-repeat: no-repeat
+	background-size: cover
+	
+.month, .number 
+	color: #fff
+	background: $color-red
+.month
+	font-size: 8px
+	border-bottom: 1px solid #fff
+	padding-left: 6px
+	padding-right: 6px
+	border-radius: 4px 4px 0 0
+.number 
+	font-weight: bold
+	border-radius: 0 0 3px 3px 
+
+
+.btn 
+	font-size: 13px
+	font-family: 'Roboto', sans-serif
+	transition: $transition
+	color: #fff
+	border-radius: 100px
+	background: $color-nav
+	padding: 7.5px 12px
+	text-transform: uppercase
+	&:hover
+		opacity: .6
+		color: #fff
+
+.form-control
+	border-radius: 100px
+	padding: 0 20px
+	background: #f5f8fa
+	height: 37px
+	border: 0
+	&:focus
+		box-shadow: none
+		background: #f5f8fa
+
+.fz-9
+	font-size: 9px
+.fz-12
+	font-size: 12px
+.fz-13
+	font-size: 13px
+
+.img-wrap 
+	overflow: hidden
+	display: inline-block
+	font-size: 0
+	position: relative
+	img 
+		transition: .3s
+	&:hover
+		img 
+			transform: scale(1.1)
+
+.time
+	position: absolute
+	top: 14px
+	left: 34px
+	color: $color-red
+	background: #fff
+	font-weight: bold
+	font-size: 12px
+	border-radius: 100px
+	padding: 0 4px
+
+.event-info 
+	color: $color-black
+	&:hover 
+		color: $color-red
+
+.fa-map-marker-alt
+	color: $color-red
+	font-size: 12px
+
+.row-1
+	margin-left: -4px
+	margin-right: -4px
+	[class*='col']
+		padding-left: 4px
+		padding-right: 4px
+
+.location
+	color: $color-nav
+	font-weight: bold
+
+.form-box
+	border-radius: 5px 
+	.newsletter
+		padding: 15px 20px 
+		font-size: 18px
+		font-weight: bold
+		border-bottom: 2px solid $color-gray
+	.newsletter-2
+		padding: 8px 20px 
+		color: $color-gray-3

@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300i,400,700&display=swap");
+.gray {
+  color: #575757; }
+
+.gray-2 {
+  color: #b6bfcd; }
+
+* {
+  outline: none !important; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #ecf0f2; }
+
+a {
+  text-decoration: none !important;
+  transition: 0.3s; }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1360px; } }
+.h1, h1 {
+  font-size: 37px;
+  color: #1b9ce5;
+  font-weight: bold;
+  background-image: url(../img/header.png);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.month, .number {
+  color: #fff;
+  background: #f42633; }
+
+.month {
+  font-size: 8px;
+  border-bottom: 1px solid #fff;
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 4px 4px 0 0; }
+
+.number {
+  font-weight: bold;
+  border-radius: 0 0 3px 3px; }
+
+.btn {
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  transition: 0.3s;
+  color: #fff;
+  border-radius: 100px;
+  background: #1b9ce5;
+  padding: 7.5px 12px;
+  text-transform: uppercase; }
+  .btn:hover {
+    opacity: 0.6;
+    color: #fff; }
+
+.form-control {
+  border-radius: 100px;
+  padding: 0 20px;
+  background: #f5f8fa;
+  height: 37px;
+  border: 0; }
+  .form-control:focus {
+    box-shadow: none;
+    background: #f5f8fa; }
+
+.fz-9 {
+  font-size: 9px; }
+
+.fz-12 {
+  font-size: 12px; }
+
+.fz-13 {
+  font-size: 13px; }
+
+.img-wrap {
+  overflow: hidden;
+  display: inline-block;
+  font-size: 0;
+  position: relative; }
+  .img-wrap img {
+    transition: 0.3s; }
+  .img-wrap:hover img {
+    transform: scale(1.1); }
+
+.time {
+  position: absolute;
+  top: 14px;
+  left: 34px;
+  color: #f42633;
+  background: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 100px;
+  padding: 0 4px; }
+
+.event-info {
+  color: #000000; }
+  .event-info:hover {
+    color: #f42633; }
+
+.fa-map-marker-alt {
+  color: #f42633;
+  font-size: 12px; }
+
+.row-1 {
+  margin-left: -4px;
+  margin-right: -4px; }
+  .row-1 [class*='col'] {
+    padding-left: 4px;
+    padding-right: 4px; }
+
+.location {
+  color: #1b9ce5;
+  font-weight: bold; }
+
+.form-box {
+  border-radius: 5px; }
+  .form-box .newsletter {
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 2px solid #ecf0f2; }
+  .form-box .newsletter-2 {
+    padding: 8px 20px;
+    color: #575757; }
+
+/*# sourceMappingURL=style.css.map */
