@@ -6,6 +6,7 @@
     <title>Events</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,17 +14,113 @@
   <header class="header-1 text-center mt-1 py-3 mb-2">Events</header>
   
   <div class="container">
-    <p class="font-weight-bold pb-3">
-      <span class="pr-2">Cook County, IL</span>
-      <a href="#!" class="icon"><img src="img/event-1.png" alt="" width="8"></a>
-      <a href="#!" class="icon"><img src="img/event-2.png" alt="" width="8"></a> | 
-      <span class="px-2">Fri, March 20 - Sun, March 22</span>
-      <a href="#!" class="icon"><img src="img/event-1.png" alt="" width="8"></a>
-      <a href="#!" class="icon"><img src="img/event-2.png" alt="" width="8"></a>
-    </p>
+    <div class="font-weight-bold pb-3 mb-3">
+      <span class="pr-2 d-inline-block align-middle">Cook County, IL</span>
+      <div class="dropdown dropdown-1 d-inline-block">
+        <a href="#!" class="icon dropdown-toggle align-middle" data-toggle="dropdown">
+          <img src="img/event-1.png" alt="" width="8">
+        </a>
+        <div class="dropdown-menu dropdown-menu-1">
+          <div class="fz-14">Refine by Geography</div>
+          <div class="fz-12 py-2">
+            <div>
+              <span class="d-inline-block align-middle">Illinois</span>
+              <a href="#!" class="icon icon-1 align-middle ml-1"><img src="img/event-2.png" alt="" width="8"></a>
+            </div>
+            <div class="pt-2">
+              <span class="d-inline-block align-middle">Cook County</span>
+              <a href="#!" class="icon icon-1 align-middle ml-1"><img src="img/event-2.png" alt="" width="8"></a>
+            </div>
+          </div>
+          <div>
+            <div class="fz-11 font-weight-bold">Select City</div>
+          </div>
+          <div class="row row-2 mt-2">
+                  <div class="col-6 col-sm-4">
+                    <label class="radio-group">
+                      <input type="checkbox" name="city" value="1">
+                      <span>Arlington Heights</span>
+                    </label>
+                  </div>
+                  <div class="col-6 col-sm-4">
+                    <label class="radio-group">
+                      <input type="checkbox" name="city" value="2" checked>
+                      <span>Evanston</span>
+                    </label>
+                  </div>
+                  <div class="col-6 col-sm-4">
+                    <label class="radio-group">
+                      <input type="checkbox" name="city" value="3">
+                      <span>Oak Park</span>
+                    </label>
+                  </div>
+                  <div class="col-6 col-sm-4">
+                    <label class="radio-group">
+                      <input type="checkbox" name="city" value="4">
+                      <span>Chicago</span>
+                    </label>
+                  </div>
+                  <div class="col-6 col-sm-4">
+                    <label class="radio-group">
+                      <input type="checkbox" name="city" value="5">
+                      <span>Forest Park</span>
+                    </label>
+                  </div>
+                  <div class="col-6 col-sm-4">
+                    <label class="radio-group">
+                      <input type="checkbox" name="city" value="6">
+                      <span>Palatine</span>
+                    </label>
+                  </div>
+                  <div class="col-6 col-sm-4">
+                    <label class="radio-group">
+                      <input type="checkbox" name="city" value="7">
+                      <span>Des Plaines</span>
+                    </label>
+                  </div>
+                  <div class="col-6 col-sm-4">
+                    <label class="radio-group">
+                      <input type="checkbox" name="city" value="8">
+                      <span>Glencoe</span>
+                    </label>
+                  </div>
+                  <div class="col-6 col-sm-4">
+                    <label class="radio-group">
+                      <input type="checkbox" name="city" value="9">
+                      <span>River Forest</span>
+                    </label>
+                  </div>
+                  <div class="col-6 col-sm-4">
+                    <label class="radio-group">
+                      <input type="checkbox" name="city" value="10">
+                      <span>Elmhurst</span>
+                    </label>
+                  </div>
+                  <div class="col-6 col-sm-4">
+                    <label class="radio-group">
+                      <input type="checkbox" name="city" value="11">
+                      <span>Lincoln Wood</span>
+                    </label>
+                  </div>
+                  <div class="col-6 col-sm-4">
+                    <label class="radio-group">
+                      <input type="checkbox" name="city" value="12">
+                      <span>Schaumburg</span>
+                    </label>
+                  </div>
+          </div>
+        </div>
+      </div>
+      <a href="#!" class="icon align-middle"><img src="img/event-2.png" alt="" width="8"></a> | 
+      <span class="pr-2 pl-sm-2 d-inline-block align-middle" id="date"></span>
+      <a href="#!" class="icon align-middle" id="reportrange">
+        <img src="img/event-1.png" alt="" width="8">
+      </a>
+      <a href="#!" class="icon align-middle"><img src="img/event-2.png" alt="" width="8"></a>
+    </div>
 
     <div class="d-inline-block text-center">
-      <div class="month">MAR</div>
+      <div class="month-1">MAR</div>
       <div class="number">20</div>
     </div>
     <i class="pl-2 fz-12 gray">All times Central Standard Timezone</i>
@@ -97,7 +194,7 @@
     </div>
 
     <div class="d-inline-block text-center">
-      <div class="month">MAR</div>
+      <div class="month-1">MAR</div>
       <div class="number">21</div>
     </div>
     <i class="pl-2 fz-12 gray">All times Central Standard Timezone</i>
@@ -185,11 +282,11 @@
     </div>
 
     <div class="d-inline-block text-center">
-      <div class="month">MAR</div>
+      <div class="month-1">MAR</div>
       <div class="number">22</div>
     </div>
     <i class="pl-2 fz-12 gray">All times Central Standard Timezone</i>
-    <div class="row mt-2 mb-5 pb-5">
+    <div class="row mt-2 mb-sm-5 pb-5">
       <div class="col-sm-6 col-lg-3 mb-5 mb-lg-4">
         <div class="bg-white h-100">
           <a href="#!" class="img-wrap">
@@ -414,6 +511,8 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
   <script src="js/common.js"></script>
 
 </body>
